@@ -1,8 +1,18 @@
-ThisBuild / version := "0.1.0-SNAPSHOT"
+name := "hello"
 
-ThisBuild / scalaVersion := "3.1.0"
+version := "1.0"
+
+scalaVersion := "2.11.8"
+
+val sparkVersion = "1.6.1"
 
 lazy val root = (project in file("."))
   .settings(
     name := "apach-spark-tutorial"
   )
+
+libraryDependencies ++= Seq(
+  "org.apache.spark" %% "spark-core" % sparkVersion,
+  "org.apache.spark" %% "spark-streaming" % sparkVersion,
+  "org.apache.spark" %% "spark-streaming-twitter" % sparkVersion
+)
