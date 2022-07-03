@@ -4,7 +4,7 @@ version := "1.0"
 
 scalaVersion := "2.11.8"
 
-val sparkVersion = "1.6.1"
+val sparkVersion = "2.4.4"
 
 lazy val root = (project in file("."))
   .settings(
@@ -13,6 +13,8 @@ lazy val root = (project in file("."))
 
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion,
-  "org.apache.spark" %% "spark-streaming" % sparkVersion,
-  "org.apache.spark" %% "spark-streaming-twitter" % sparkVersion
+  "org.apache.spark" %% "spark-sql" % sparkVersion
+//  "org.apache.spark" %% "spark-core" % sparkVersion,
+//  "org.apache.spark" %% "spark-streaming" % sparkVersion,
+//  "org.apache.spark" %% "spark-streaming-twitter" % sparkVersion
 )

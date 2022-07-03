@@ -1,6 +1,6 @@
 package RDD
 
-import org.apache.log4j.{Level, Logger}
+import org.apache.log4j.{Logger,Level}
 import org.apache.spark.SparkContext
 
 /**
