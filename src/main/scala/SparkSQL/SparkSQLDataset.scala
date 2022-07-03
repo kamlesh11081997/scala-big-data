@@ -5,6 +5,7 @@ import org.apache.spark.sql.SparkSession
 
 /**
  * Doc : https://i.stack.imgur.com/3rF6p.png
+ * Ref : https://spark.apache.org/docs/2.1.0/sql-programming-guide.html
  * Ref : https://www.analyticsvidhya.com/blog/2020/11/what-is-the-difference-between-rdds-dataframes-and-datasets/
  * RDD :       RDD is a distributed collection of data elements without any schema. RDD's can be converted to Dataset with
  *              .toDS()
